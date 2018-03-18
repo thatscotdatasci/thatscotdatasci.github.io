@@ -23,7 +23,7 @@ twitter_username: thatscotdatasci
 github_username:  thatscotdatasci
 
 repository: thatscotdatasci/thatscotdatasci.github.io # GitHub repository for this site
-# github: [metadata]
+github: [metadata]
 
 # Build settings
 markdown: kramdown
