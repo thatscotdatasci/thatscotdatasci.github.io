@@ -1,0 +1,78 @@
+---
+layout: default
+title: Wiki
+permalink: /wiki/index.html
+---
+
+<h1> Wiki Home</h1>
+
+<p>This wiki contains a multitude of useful technologies, libraries, features and tricks I have come across.<br><br>
+  
+Recognition:
+<ul>
+<li><a href="https://gist.github.com/Phlow/a0e3fa686eb259fe7f76">This</a> code snippet from GitHub user <a href="https://github.com/Phlow">Phlow</a> aided me in producing the below hierarchical view of my wiki, arranged by categories and tags.</li>
+</ul>
+</p>
+
+{% assign rawcategories = "" %}
+{% for wiki in site.wiki %}
+  {% assign tcategories = wiki.categories | join:'|' | append:'|' %}
+  {% assign rawcategories = rawcategories | append:tcategories %}
+{% endfor %}
+{% assign rawcategories = rawcategories | split:'|' | sort %}
+
+{% assign categories = "" %}
+{% for category in rawcategories %}
+  {% if category != "" %}
+    {% if categories == "" %}
+      {% assign categories = category | split:'|' %}
+      {% endif %}
+      {% unless categories contains category %}
+      {% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+
+{% for category in categories %}
+  <h2 id="{{ category | slugify }}">{{ category }}</h2>
+  <ul>
+  {% assign cat_wikis = site.wiki | where_exp: "item", "item.categories contains category" %}
+  {% assign rawtags = "" %}
+  {% for wiki in cat_wikis %}
+    {% assign ttags = wiki.tags | join:'|' | append:'|' %}
+    {% assign rawtags = rawtags | append:ttags %}
+  {% endfor %}
+  {% assign rawtags = rawtags | split:'|' | sort %}
+
+  {% assign tags = "" %}
+  {% for tag in rawtags %}
+    {% if tag != "" %}
+      {% if tags == "" %}
+        {% assign tags = tag | split:'|' %}
+        {% endif %}
+        {% unless tags contains tag %}
+        {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% for tag in tags %}
+    {% assign tag_wikis = cat_wikis | where_exp: "item", "item.tags contains tag" %}
+    <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+    <ul>
+    {% for wiki in tag_wikis %}
+      <li>
+      <h3>
+      <a href="{{ wiki.url }}">
+      {{ wiki.title }}
+      </a>
+      {% for tag in wiki.tags %}
+        <a class="tag" href="/wiki/tag/#{{ tag | slugify }}">({{ tag }})</a>
+      {% endfor %}
+      </h3>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+  </ul>
+{% endfor %}
