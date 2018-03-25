@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Managing Anaconda Environmnets
-permalink: /wiki/Python/Anaconda/Managing_Environments
+categories: [ Python ]
+tags: [ Python ]
 ---
 
 # Managing Anaconda Environments
@@ -13,26 +13,36 @@ Full information about managing Anaconda environments can be found [here](https:
 
 Create an new Anaconda environment with the command:
 
-**conda create --name\|-n myenv**
+{% highlight bash %}
+conda create --name|-n myenv
+{% endhighlight %}
 
 The environment can be created to use a specific version of Python by specifying:
 
-**conda create -n myenv python=\<desired version\>**
+{% highlight bash %}
+conda create -n myenv python=<desired version>
+{% endhighlight %}
 <br><br>
 
 ## Listing Environments
 
 To list the available environments, run one of the following commands:
 
-**conda info --envs**
+{% highlight bash %}
+conda info --envs
+{% endhighlight %}
 
 OR
 
-**conds list env**
+{% highlight bash %}
+conds list env
+{% endhighlight %}
 <br><br>
 
 ## Activating an Environment
 
 To activate an environment (on Windows), run the following command:
 
-**activate \<environment\>**
+{% highlight bash %}
+activate <environment>
+{% endhighlight %}

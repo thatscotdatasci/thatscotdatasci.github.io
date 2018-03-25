@@ -27,9 +27,23 @@ github: [metadata]
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+
+# User defined collections
+collections:
+  wiki:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: wiki
+    values:
+      layout: default
+      permalink: /:collection/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
