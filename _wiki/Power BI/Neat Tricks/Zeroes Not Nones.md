@@ -1,7 +1,7 @@
 ---
 title: Zeroes not Nones
 categories: [ Power BI ]
-tags: [ Power BI ]
+tags: [ Neat Tricks ]
 ---
 
 # Zeros not Nones

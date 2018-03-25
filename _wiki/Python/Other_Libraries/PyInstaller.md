@@ -1,7 +1,7 @@
 ---
 title: PyInstaller
 categories: [ Python ]
-tags: [ Python ]
+tags: [ Other Libraries ]
 ---
 
 # PyInstaller

@@ -1,7 +1,7 @@
 ---
 title: Fill Empty Values from another Column
 categories: [ Python ]
-tags: [ Python ]
+tags: [ Pandas, Neat Tricks ]
 ---
 
 # Fill Empty Values from another Column

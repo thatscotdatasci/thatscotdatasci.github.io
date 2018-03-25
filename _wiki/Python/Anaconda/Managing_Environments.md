@@ -1,7 +1,7 @@
 ---
 title: Managing Anaconda Environmnets
 categories: [ Python ]
-tags: [ Python ]
+tags: [ Anaconda ]
 ---
 
 # Managing Anaconda Environments

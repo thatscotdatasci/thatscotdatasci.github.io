@@ -1,7 +1,7 @@
 ---
 title: Where's the Branch?
 categories: [ Git ]
-tags: [ Git, Hello ]
+tags: [ General ]
 ---
 
 # Where's the Branch?
