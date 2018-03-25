@@ -6,7 +6,7 @@ tags: [ Git, Hello ]
 
 # Where's the Branch?
 
-You know that a branch exists remotely (on GitHub/TFS Git, etc.) but it isn't appearing locally in your IDE, and running@
+You know that a branch exists remotely (on GitHub/TFS Git, etc.) but it isn't appearing locally in your IDE, and running:
 
 {% highlight bash %}
 git checkout <branch>
