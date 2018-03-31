@@ -1,6 +1,5 @@
 .header {
   color: $header-heading-color;
-  text-align: left;
   background-color: $header-bg-color;
   border-bottom: solid 1px $hr-border-color;
   width: 100%;
@@ -34,7 +33,7 @@
     width: 100%;
 
     @include large {
-      margin-top: 33%;
+      margin-top: 1rem;
     }
 
     @include medium {
