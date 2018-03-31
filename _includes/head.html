@@ -1,4 +1,7 @@
 <head>
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/icons/tsds.ico"  | absolute_url }}" >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
