@@ -1,19 +1,32 @@
 .footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  color: $footer-heading-color;
+  text-align: left;
+  background-color: $footer-bg-color;
   border-top: solid 1px $hr-border-color;
-  background-color: #eceff1;
+
+  div[class*='col-'] {
+    text-align: center;
+  }
 
   @include large {
-    font-size: 1rem;
+    padding: 0.5rem 2rem;
+
+    div[class*='col-'] {
+      text-align: left;
+    }
   }
 
   @include medium {
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   @include small {
+    padding: 0.5rem 0.5rem;
     font-size: 0.9rem;
+  }
+
+  img {
+    padding: 0.5rem;
   }
 }
 
@@ -24,4 +37,20 @@
 
 .footer-credits {
   color: $blockquote-text-color;
+}
+
+.footer-links {
+  float: right;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @include medium {
+    width: 100%;
+  }
+
+  @include small {
+    width: 100%;
+  }
 }

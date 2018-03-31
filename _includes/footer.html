@@ -1,6 +1,26 @@
 <footer class="footer">
-  {% if site.github.is_project_page %}
-    <span class="footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-  {% endif %}
-  <span class="footer-credits">&copy; 2018 That Scottish Data Scientist</a></span>
+  <div class="row">
+    <div class="col-8">
+      {% if site.github.is_project_page %}
+        <span class="footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="footer-credits">&copy; 2018 ThatScotDataSci</a></span>
+    </div>
+    <div class="col-4">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/thatscotdatasci">
+          <img src="/assets/logos/linkedin_black_32.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/thatscotdatasci">
+          <img src="/assets/logos/github_black_32.png" alt="Git Hub">
+        </a>
+        <a href="https://stackoverflow.com/users/9502131/thatscotdatasci?tab=profile">
+          <img src="/assets/logos/stackoverflow_black_32.png" alt="Stack Overflow">
+        </a>
+        <a href="https://twitter.com/thatscotdatasci">
+          <img src="/assets/logos/twitter_black_32.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
