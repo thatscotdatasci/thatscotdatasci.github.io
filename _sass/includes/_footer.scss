@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px $hr-border-color;
+  background-color: #eceff1;
+
+  @include large {
+    font-size: 1rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: 0.9rem;
+  }
+}
+
+.footer-owner {
+  display: block;
+  font-weight: bold;
+}
+
+.footer-credits {
+  color: $blockquote-text-color;
+}

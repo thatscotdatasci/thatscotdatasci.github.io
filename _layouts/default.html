@@ -4,11 +4,16 @@
   {% include head.html %}
   {% include header.html %}
   <body>
+    <section class="banner-image">
+      <img src="/assets/images/HomePage1800.png" alt="TSDS">
+    </section>
+    <section class="banner-image-small">
+      <img src="/assets/images/HomePage1200.png" alt="TSDS">
+    </section>
     <section class="main-content">
       {{ content }}
-
-      {% include footer.html %}
     </section>
+    {% include footer.html %}
 
     {% if site.google_analytics %}
       <script type="text/javascript">
