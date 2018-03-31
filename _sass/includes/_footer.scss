@@ -30,12 +30,9 @@
   }
 }
 
-.footer-owner {
-  font-weight: bold;
-}
-
-.footer-credits {
-  color: $blockquote-text-color;
+.footer-notes {
+  display: block;
+  color: $footer-text-color;
 }
 
 .footer-links {
