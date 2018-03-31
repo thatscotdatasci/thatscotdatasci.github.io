@@ -44,9 +44,9 @@
 }
 
 .row::after {
-    content: "";
+    content: " ";
     clear: both;
-    display: inline;
+    display: block;
 }
 
 body {
@@ -129,7 +129,7 @@ a {
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -143,7 +143,7 @@ a {
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
