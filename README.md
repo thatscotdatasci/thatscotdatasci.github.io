@@ -1,6 +1,6 @@
 # That Scottish Data Scientist Website
 
-![TSDS Logo](https://github.com/thatscotdatasci/thatscotdatasci.github.io/blob/master/assets/images/tsds.png)
+![TSDS Logo](https://github.com/thatscotdatasci/thatscotdatasci.github.io/blob/master/assets/logos/tsds.png)
 
 ## Welcome to the code behind the TSDS website!
 
