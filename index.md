@@ -1,8 +1,10 @@
 ---
 layout: default
-title: That Scottish Data Scientist
+title: Home
 permalink: /
+banner-header: Welcome to ThatScotDataSci
+banner-subheader: Find out more about me >
 ---
 
-# Hello World
-I'm hosted with GitHub Pages.
+# Welcome to ThatScotDataSci
+Personal website of data scientist Alan Clark
