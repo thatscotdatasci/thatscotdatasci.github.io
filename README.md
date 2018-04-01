@@ -1,10 +1,10 @@
 # That Scottish Data Scientist Website
 
-![TSDS Logo](https://github.com/thatscotdatasci/thatscotdatasci.github.io/blob/master/assets/logos/tsds.png)
+![TSDS Logo](https://github.com/thatscotdatasci/thatscotdatasci.github.io/blob/master/assets/logos/tsds_100.jpg)
 
 ## Welcome to the code behind the TSDS website!
 
-Hello, you have found the code for my website [thatscottishdatascientist.com](http://thatscottishdatascientist.com).
+Hello, you have found the code for my website [thatscotdatasci.com](http://thatscotdatasci.com).
 
 ## Such thing as a free lunch?
 
