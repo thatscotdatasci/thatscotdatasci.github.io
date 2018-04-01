@@ -1,27 +1,29 @@
 .banner-image {
   display: none;
+  position: relative;
+  width: 100%;
 
   @include large {
+    background: url('/assets/images/homepage_1800.png') center center no-repeat;
+    background-size: cover;
     display: block;
-    position: relative;
-    padding-top: 155px;
+    height: 745px;
   }
 
   @include medium {
+    background: url('/assets/images/homepage_1200.png') center center no-repeat;
     display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
+    height: 645px;
   }
 }
+
 
 .banner-text-block {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     left: 10%;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     background-color: rgba($tsds-pink-color, 0.6);
 
     h1 {
@@ -33,17 +35,4 @@
       margin: 0;
       color: white;
     }
-}
-
-.banner-image-small {
-  display: none;
-
-  @include small {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
