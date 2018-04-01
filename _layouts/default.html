@@ -4,15 +4,19 @@
   {% include head.html %}
   {% include header.html %}
   <body>
-    <section class="banner-image">
+    <div class="banner-image">
       <img src="/assets/images/homepage_1800.png" alt="TSDS">
-    </section>
-    <section class="banner-image-small">
+      <div class="banner-text-block">
+        <h1>Welcome to ThatScotDataSci</h1>
+        <p>Find out more about me ></p>
+      </div>
+    </div>
+    <div class="banner-image-small">
       <img src="/assets/images/homepage_1200.png" alt="TSDS">
-    </section>
-    <section class="main-content">
+    </div>
+    <div class="main-content">
       {{ content }}
-    </section>
+    </div>
     {% include footer.html %}
 
     {% if site.google_analytics %}

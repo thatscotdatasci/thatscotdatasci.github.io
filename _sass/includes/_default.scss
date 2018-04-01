@@ -3,6 +3,7 @@
 
   @include large {
     display: block;
+    position: relative;
     padding-top: 155px;
   }
 
@@ -14,6 +15,24 @@
     width: 100%;
     height: auto;
   }
+}
+
+.banner-text-block {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 10px;
+    background-color: rgba($tsds-pink-color, 0.6);
+
+    h1 {
+      margin: 0;
+      color: white;
+    }
+
+    p {
+      margin: 0;
+      color: white;
+    }
 }
 
 .banner-image-small {
