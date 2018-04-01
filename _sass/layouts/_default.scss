@@ -4,14 +4,14 @@
   width: 100%;
 
   @include large {
-    background: url('/assets/images/homepage_1800.png') center center no-repeat;
+    background: url('/assets/images/homepage_1800.jpg') center center no-repeat;
     background-size: cover;
     display: block;
     height: 745px;
   }
 
   @include medium {
-    background: url('/assets/images/homepage_1200.png') center center no-repeat;
+    background: url('/assets/images/homepage_1200.jpg') center center no-repeat;
     display: block;
     height: 645px;
   }
