@@ -5,6 +5,7 @@
 @import 'includes/normalize';
 @import 'includes/header';
 @import 'includes/footer';
+@import 'includes/default';
 @import 'includes/rouge-github';
 
 * {
@@ -112,37 +113,6 @@ a {
       margin-top: 1rem;
       margin-left: 0;
     }
-  }
-}
-
-.banner-image {
-  display: none;
-
-  @include large {
-    display: block;
-    padding-top: 155px;
-  }
-
-  @include medium {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.banner-image-small {
-  display: none;
-
-  @include small {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 }
 

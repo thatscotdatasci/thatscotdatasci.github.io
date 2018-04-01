@@ -1,0 +1,30 @@
+.banner-image {
+  display: none;
+
+  @include large {
+    display: block;
+    padding-top: 155px;
+  }
+
+  @include medium {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.banner-image-small {
+  display: none;
+
+  @include small {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
