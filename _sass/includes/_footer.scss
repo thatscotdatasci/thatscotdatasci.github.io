@@ -1,31 +1,22 @@
 .footer {
-  color: $footer-heading-color;
-  text-align: left;
+  color: $footer-text-color;
+  text-align: center;
   background-color: $footer-bg-color;
-
-  div[class*='col-'] {
-    text-align: center;
-  }
+  padding: 0.5rem;
+  font-size: 0.9rem;
 
   @include large {
     padding: 0.5rem 2rem;
-
-    div[class*='col-'] {
-      text-align: left;
-    }
+    font-size: 1rem;
+    text-align: left;
   }
 
   @include medium {
     padding: 0.5rem 1rem;
-  }
-
-  @include small {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 .footer-notes {
   display: block;
-  color: $footer-text-color;
 }

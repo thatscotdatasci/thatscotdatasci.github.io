@@ -1,5 +1,6 @@
 .social-media-links {
-  float: right;
+  width: 100%;
+  text-align: center;
 
   img {
     padding: 0.5rem;
@@ -9,11 +10,7 @@
     text-decoration: none;
   }
 
-  @include medium {
-    width: 100%;
-  }
-
-  @include small {
-    width: 100%;
+  @include large {
+    text-align: right;
   }
 }

@@ -3,24 +3,18 @@
   background-color: $header-bg-color;
   border-bottom: solid 1px $hr-border-color;
   width: 100%;
-
-  div[class*='col-'] {
-    text-align: center;
-  }
+  padding: 0.5rem;
+  text-align: center;
 
   @include large {
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
     padding: 0.5rem 2rem;
     top: 0;
   }
 
   @include medium {
     padding: 0.5rem 1rem;
-  }
-
-  @include small {
-    padding: 0.5rem 0.5rem;
   }
 
   a:hover {
@@ -39,6 +33,7 @@
   margin-bottom: 0.1rem;
   color: $tsds-pink-color;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-size: 1.75rem;
 
   &:hover {
     color: $tsds-green-color;
@@ -51,10 +46,6 @@
 
   @include medium {
     font-size: 2.25rem;
-  }
-
-  @include small {
-    font-size: 1.75rem;
   }
 }
 
@@ -72,7 +63,8 @@
 }
 
 .header-links {
-  float: right;
+  text-align: center;
+  width: 100%;
 
   a:hover {
     text-decoration: none;
@@ -80,13 +72,6 @@
 
   @include large {
     margin-top: 1rem;
-  }
-
-  @include medium {
-    width: 100%;
-  }
-
-  @include small {
-    width: 100%;
+    text-align: right;
   }
 }
