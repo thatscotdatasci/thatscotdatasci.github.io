@@ -4,8 +4,9 @@
   </div>
   <div class="col-10">
     <div class="section">
-      <h1 class="section-name">{{ include.title }}</h1>
-      <h2>{{ include.sub-title }}</h2>
+      <div class="section-title">{{ include.title }}</div>
+      <div class="section-subtitle">{{ include.sub-title }}</div>
+      <div class="section-subtitle">{{ include.date-from | date: "%d/%m/%Y" }} - {{ include.date-to | date: "%d/%m/%Y" }}</div>
       <p>{{ include.content }}</p>
     </div>
   </div>
