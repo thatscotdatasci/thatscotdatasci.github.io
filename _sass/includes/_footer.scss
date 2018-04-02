@@ -10,16 +10,22 @@
 
   @include media($large) {
     text-align: left;
-    .col-8 {
-      width: 66.6%;
-    }
-    .col-4 {
-      width: 33.3%;
-    }
   }
 
   .col-8, .col-4 {
     width: 100%;
+  }
+
+  .col-8 {
+    @include media($large) {
+      width: 66.6%;
+    }
+  }
+
+  .col-4 {
+    @include media($large) {
+      width: 33.3%;
+    }
   }
 
   .footer-notes {
