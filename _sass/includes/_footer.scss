@@ -24,29 +24,9 @@
     padding: 0.5rem 0.5rem;
     font-size: 0.9rem;
   }
-
-  img {
-    padding: 0.5rem;
-  }
 }
 
 .footer-notes {
   display: block;
   color: $footer-text-color;
-}
-
-.footer-links {
-  float: right;
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  @include medium {
-    width: 100%;
-  }
-
-  @include small {
-    width: 100%;
-  }
 }

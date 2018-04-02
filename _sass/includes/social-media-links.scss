@@ -1,0 +1,19 @@
+.social-media-links {
+  float: right;
+
+  img {
+    padding: 0.5rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @include medium {
+    width: 100%;
+  }
+
+  @include small {
+    width: 100%;
+  }
+}
