@@ -43,6 +43,8 @@ plugins:
 collections:
   wiki:
     output: true
+  career:
+    output: false
 
 defaults:
   - scope:
