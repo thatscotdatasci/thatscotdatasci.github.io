@@ -15,6 +15,22 @@
     top: 0;
   }
 
+  .col-8, .col-4 {
+    width: 100%;
+  }
+
+  .col-8 {
+    @include media($medium) {
+      width: 66.6%;
+    }
+  }
+
+  .col-4 {
+    @include media($medium) {
+      width: 33.3%;
+    }
+  }
+
   a:hover {
     text-decoration: none;
   }
