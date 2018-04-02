@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-UK" }}">
+<html lang="{{ site.lang | default: "en-GB" }}">
   {% include head.html %}
-  {% include header.html %}
   <body>
+    {% include header.html %}
     {% if page.banner-header %}
       <div class="banner-image">
         <div class="banner-text-block">
@@ -19,6 +19,6 @@
       {% endif %}
       {{ content }}
     </div>
+    {% include footer.html %}
   </body>
-  {% include footer.html %}
 </html>

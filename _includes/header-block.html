@@ -4,33 +4,35 @@
     <p>Date: {{ page.date | date_to_long_string }}</p>
   {% endif %}
   {% if page.categories.size > 0 %}
-    {% if page.categories.size == 1 %}
-      <p>Category:
-    {% else %}
-      <p>Categories:
-    {% endif %}
-    {% for category in page.categories %}
-      {% if forloop.last %}
-        <a>{{ category }}</a>
+    <p>
+      {% if page.categories.size == 1 %}
+        Category:
       {% else %}
-        <a>{{ category }}, </a>
+        Categories:
       {% endif %}
-    {% endfor %}
+      {% for category in page.categories %}
+        {% if forloop.last %}
+          <a>{{ category }}</a>
+        {% else %}
+          <a>{{ category }}, </a>
+        {% endif %}
+      {% endfor %}
     </p>
   {% endif %}
   {% if page.tags.size > 0 %}
-    {% if page.tags.size == 1 %}
-      <p>Tag:
-    {% else %}
-      <p>Tags:
-    {% endif %}
-    {% for tag in page.tags %}
-      {% if forloop.last %}
-        <a>{{ tag }}</a>
+    <p>
+      {% if page.tags.size == 1 %}
+        Tag:
       {% else %}
-        <a>{{ tag }}, </a>
+        Tags:
       {% endif %}
-    {% endfor %}
+      {% for tag in page.tags %}
+        {% if forloop.last %}
+          <a>{{ tag }}</a>
+        {% else %}
+          <a>{{ tag }}, </a>
+        {% endif %}
+      {% endfor %}
     </p>
   {% endif %}
 </div>
