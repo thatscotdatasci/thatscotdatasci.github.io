@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-GB" }}">
   {% include head.html %}
-  <body>
+  <body class="sticky">
     {% include header.html %}
     {% if page.banner-header %}
       <div class="banner-image">
@@ -15,7 +15,7 @@
         </div>
       </div>
     {% endif %}
-    <div class="main-content">
+    <div class="main-content sticky-content">
       <div class="container">
         <div class="row">
           <div class="col-12">
