@@ -4,23 +4,18 @@
   {% include header.html %}
   <body>
     {% if page.banner-header %}
-    <div class="banner-image">
-      <div class="banner-text-block">
-        <h1>{{ page.banner-header }}</h1>
-        {% if page.banner-subheader %}
-          <p>{{ page.banner-subheader }}</p>
-        {% endif %}
+      <div class="banner-image">
+        <div class="banner-text-block">
+          <h1>{{ page.banner-header }}</h1>
+          {% if page.banner-subheader %}
+            <p>{{ page.banner-subheader }}</p>
+          {% endif %}
+        </div>
       </div>
-    </div>
     {% endif %}
     <div class="main-content">
       {% if page.title %}
-        <div class="header-block">
-          <h1>{{ page.title }}</h1>
-          {% if page.display-date %}
-            <p>Date: {{ page.date | date_to_long_string }}</p>
-          {% endif %}
-        </div>
+        {% include header-block.html %}
       {% endif %}
       {{ content }}
     </div>
