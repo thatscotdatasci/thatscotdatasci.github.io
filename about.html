@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /about
+---
+
+<div class="row">
+  <div class="col-8">
+    <p>A copy of my CV can be found here, and please feel free to get in touch via email or any social media channel.</p>
+  </div>
+  <div class="col-4">
+    {% include social-media-links.html %}
+  </div>
+</div>
+
+{% assign careeritems = site.career | sort: 'date-from' %}
+{% for item in careeritems %}
+  {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to content=item.content image=item.image %}
+{% endfor %}
