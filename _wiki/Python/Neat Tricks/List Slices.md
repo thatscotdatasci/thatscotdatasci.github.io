@@ -4,15 +4,12 @@ categories: [ Python ]
 tags: [ Neat Tricks ]
 ---
 
-# List Slices
-
 I regularly use the following strategy to perform SQL queries using a list:
 
 
 However, if there are too many items in your search list for the SQL server to handle, you may emcounter the following error:
 
 > _pyodbc.Error: ('07002', '\[07002\] \[Microsoft\]\[SQL Server Native Client 11.0\]COUNT field incorrect or syntax error (0) (SQLExecDirectW)')_
-<br><br>
 
 ## Breaking it down
 

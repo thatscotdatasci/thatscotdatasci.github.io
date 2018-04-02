@@ -4,10 +4,7 @@ categories: [ Python ]
 tags: [ Anaconda ]
 ---
 
-# Managing Anaconda Environments
-
 Full information about managing Anaconda environments can be found [here](https://conda.io/docs/user-guide/tasks/manage-environments.html) - the information below has been taken from this source.
-<br><br>
 
 ## Creating an Environment
 

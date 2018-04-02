@@ -4,8 +4,6 @@ categories: [ Git ]
 tags: [ General ]
 ---
 
-# Where's the Branch?
-
 You know that a branch exists remotely (on GitHub/TFS Git, etc.) but it isn't appearing locally in your IDE, and running:
 
 {% highlight bash %}
@@ -13,7 +11,6 @@ git checkout <branch>
 {% endhighlight %}
 
 doesn't return any results. Where has the branch gone?
-<br><br>
 
 ## Hiding in plain sight
 

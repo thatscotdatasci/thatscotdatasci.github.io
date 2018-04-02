@@ -4,14 +4,11 @@ categories: [ Python ]
 tags: [ Pandas, Neat Tricks ]
 ---
 
-# Lambda Functions on Data Frames
-
 Quoting [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/basics.html) (Essential Basic Functionality) regarding Row or Column-wise Function Application:
 
 > _Arbitrary functions can be applied along the axes of a DataFrame or Panel using the apply() method, which, like the descriptive statistics methods, take an optional axis argument_
 
 Taking advantage of this functionality in combination with lamda functions provides a powerful means of implementing advanced row or column based operations.
-<br><br>
 
 ## Example Implementation
 
