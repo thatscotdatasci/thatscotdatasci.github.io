@@ -1,27 +1,24 @@
 .section {
-  margin: 15px;
-  padding: 15px;
-
-  // Border definition
+  padding: 15px 0;
   border-top: 1px solid $border-color-dark;
   border-bottom: 1px solid $border-color-dark;
-}
 
-.section_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .section_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: $tsds-pink-color;
-  font-size: 2rem;
-}
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $tsds-pink-color;
+    font-size: 2rem;
+  }
 
-.section-subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.5rem;
+  .section-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
 }

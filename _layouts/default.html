@@ -5,19 +5,27 @@
     {% include header.html %}
     {% if page.banner-header %}
       <div class="banner-image">
-        <div class="banner-text-block">
-          <h1>{{ page.banner-header }}</h1>
-          {% if page.banner-subheader %}
-            <p>{{ page.banner-subheader }}</p>
-          {% endif %}
+        <div class="container">
+          <div class="banner-text-block">
+            <h1>{{ page.banner-header }}</h1>
+            {% if page.banner-subheader %}
+              <p>{{ page.banner-subheader }}</p>
+            {% endif %}
+          </div>
         </div>
       </div>
     {% endif %}
     <div class="main-content">
-      {% if page.title %}
-        {% include header-block.html %}
-      {% endif %}
-      {{ content }}
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            {% if page.title %}
+              {% include header-block.html %}
+            {% endif %}
+            {{ content }}
+          </div>
+        </div>
+      </div>
     </div>
     {% include footer.html %}
   </body>

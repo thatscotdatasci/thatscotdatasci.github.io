@@ -14,21 +14,21 @@
 [class*="col-"] {
   float: left;
   padding: 15px;
-
   @include small {
-    width: 100%;
-  }
-
-  @include medium {
     width: 100%;
   }
 }
 
 .row {
-    padding: 15px;
+    padding: 15px 0;
     &::after {
       content: " ";
       clear: both;
       display: block;
     }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }

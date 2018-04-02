@@ -3,35 +3,34 @@
   position: relative;
   width: 100%;
 
-  @include large {
-    background: url('/assets/images/homepage_1800.jpg') center center no-repeat;
-    background-size: cover;
-    display: block;
-    height: 745px;
-  }
-
-  @include medium {
+  @include media($medium) {
     background: url('/assets/images/homepage_1200.jpg') center center no-repeat;
+    background-size: cover;
     display: block;
     height: 645px;
   }
-}
 
+  @include media($large) {
+    background: url('/assets/images/homepage_1800.jpg') center center no-repeat;
+    background-size: cover;
+    height: 745px;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+}
 
 .banner-text-block {
     position: absolute;
     top: 50%;
+    left: 15px;
     transform: translateY(-50%);
-    left: 10%;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     background-color: rgba($tsds-pink-color, 0.6);
 
-    h1 {
-      margin: 0;
-      color: white;
-    }
-
-    p {
+    h1, p {
       margin: 0;
       color: white;
     }

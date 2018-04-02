@@ -1,5 +1,5 @@
 .btn {
-  display: inline-block;
+  display: block;
   margin-bottom: 1rem;
   color: rgba($tsds-pink-color, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
@@ -12,6 +12,20 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+
+  @include media($medium) {
+    padding: 0.6rem 0.9rem;
+    display: inline-block;
+    width: auto;
+  }
+
+  @include media($large) {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
 
   &:hover {
     color: rgba($tsds-green-color, 0.8);
@@ -21,27 +35,11 @@
   }
 
   + .btn {
-    margin-left: 1rem;
-  }
-
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
+    margin-left: 0;
+    margin-top: 1rem;
+    @include media($medium) {
+      margin-left: 1rem;
+      margin-top: 0;
     }
   }
 }

@@ -23,8 +23,8 @@ body {
   line-height: 1.5;
   color: $body-text-color;
 
-  @include large {
-    padding-top: 185px;
+  @include media($large) {
+    padding-top: 161px;
   }
 }
 
@@ -39,23 +39,14 @@ a {
 
 .main-content {
   word-wrap: break-word;
-  padding: 2rem 1rem;
   font-size: 1rem;
+
+  @include media($medium) {
+    font-size: 1.1rem;
+  }
 
   :first-child {
     margin-top: 0;
-  }
-
-  @include large {
-    max-width: 80rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
   }
 
   img {

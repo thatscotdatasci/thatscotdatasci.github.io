@@ -2,21 +2,27 @@
   color: $footer-text-color;
   text-align: center;
   background-color: $footer-bg-color;
-  padding: 0.5rem;
   font-size: 0.9rem;
 
-  @include large {
-    padding: 0.5rem 2rem;
+  @include media($medium) {
     font-size: 1rem;
+  }
+
+  @include media($large) {
     text-align: left;
+    .col-8 {
+      width: 66.6%;
+    }
+    .col-4 {
+      width: 33.3%;
+    }
   }
 
-  @include medium {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+  .col-8, .col-4 {
+    width: 100%;
   }
-}
 
-.footer-notes {
-  display: block;
+  .footer-notes {
+    display: block;
+  }
 }

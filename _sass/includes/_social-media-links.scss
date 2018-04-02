@@ -2,15 +2,15 @@
   width: 100%;
   text-align: center;
 
+  @include media($large) {
+    text-align: right;
+  }
+
   img {
     padding: 0.5rem;
   }
 
   a:hover {
     text-decoration: none;
-  }
-
-  @include large {
-    text-align: right;
   }
 }

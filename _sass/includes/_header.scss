@@ -3,18 +3,16 @@
   background-color: $header-bg-color;
   border-bottom: solid 1px $hr-border-color;
   width: 100%;
-  padding: 0.5rem;
   text-align: center;
 
-  @include large {
-    position: fixed;
-    z-index: 10;
-    padding: 0.5rem 2rem;
-    top: 0;
+  @include media($medium) {
+    text-align: left;
   }
 
-  @include medium {
-    padding: 0.5rem 1rem;
+  @include media($large) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
   }
 
   a:hover {
@@ -22,56 +20,94 @@
   }
 
   img {
+    margin: 0 auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+    max-width: 100%;
 
-.header-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
-  color: $tsds-pink-color;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  font-size: 1.75rem;
-
-  &:hover {
-    color: $tsds-green-color;
+    @include media($large) {
+      margin: 0;
+    }
   }
 
-  @include large {
-    font-size: 3.25rem;
+  .header-logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header-information {
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+
+    @include media($medium) {
+      width: auto;
+      margin-left: 15px;
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .header-links {
+    text-align: center;
+    width: 100%;
+
+    @include media($medium) {
+      margin-top: 30px;
+    }
+
+    @include media($large) {
+      text-align: right;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:last-child {
+      margin-bottom: 0;
+    }
+
+    .btn {
+      @include media($medium) {
+        margin-bottom: 0;
+      }
+
+      + .btn {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .header-name {
+    margin: 0;
+    color: $tsds-pink-color;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    font-size: 1.75rem;
+
+    @include media($medium) {
+      font-size: 2.25rem;
+    }
+
+    @include media($large) {
+      text-align: left;
+    }
+
+    &:hover {
+      color: $tsds-green-color;
+    }
+  }
+
+  .header-tagline {
+    margin: 0;
     text-align: left;
-  }
+    font-weight: normal;
+    opacity: 0.7;
+    display: none;
 
-  @include medium {
-    font-size: 2.25rem;
-  }
-}
-
-.header-tagline {
-  margin: 0;
-  text-align: left;
-  font-weight: normal;
-  opacity: 0.7;
-  display: none;
-
-  @include large {
-    display: block;
-    font-size: 1.25rem;
-  }
-}
-
-.header-links {
-  text-align: center;
-  width: 100%;
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  @include large {
-    margin-top: 1rem;
-    text-align: right;
+    @include media($large) {
+      display: block;
+      font-size: 1.25rem;
+    }
   }
 }
