@@ -1,0 +1,21 @@
+.section {
+  margin: 15px;
+  padding: 15px;
+
+  // Border definition
+  border-top: 1px solid $tsds-pink-color;
+  border-bottom: 1px solid $tsds-pink-color;
+}
+
+.section_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $tsds-pink-color;
+  font-size: 2.25rem;
+}
