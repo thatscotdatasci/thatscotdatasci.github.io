@@ -1,12 +1,8 @@
 ---
 layout: default
-title: Blog
+title: Blog Home
 permalink: /blog
 ---
-
-# Blog Home
-
-**This is the blog homepage**
 
 Blog articles:
 
