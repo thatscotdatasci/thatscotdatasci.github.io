@@ -4,18 +4,35 @@
   </div>
   <div class="col-10">
     <div class="section">
-      <div class="section-title"><a href="{{ include.website }}" target="_blank" rel="noopener">{{ include.title }}</a></div>
-      {% if include.sub-title %}
-        <div class="section-subtitle">{{ include.sub-title }}</div>
-      {% endif %}
-      {% if include.date-from %}
-        {% if include.date-to %}
-          <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }} - {{ include.date-to | date: "%b %Y" }}</div>
-        {% else %}
-          <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }}</div>
-        {% endif %}
-      {% endif %}
-      {{ include.content }}
+      <div class="row">
+        <div class="col-7">
+          <div class="section-title"><a href="{{ include.website }}" target="_blank" rel="noopener">{{ include.title }}</a></div>
+          {% if include.sub-title %}
+            <div class="section-subtitle">{{ include.sub-title }}</div>
+          {% endif %}
+          {% if include.date-from %}
+            {% if include.date-to %}
+              <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }} - {{ include.date-to | date: "%b %Y" }}</div>
+            {% else %}
+              <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }}</div>
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="col-5">
+          {% if include.technologies %}
+            <div class="icon-links">
+              {% for technology in include.technologies %}
+                <img src="/assets/logos/technologies/{{ technology }}_32.jpg" alt="{{ technology }}">
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {{ include.content }}
+        </div>
+      </div>
     </div>
   </div>
 </div>
