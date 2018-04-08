@@ -6,4 +6,8 @@ banner-header: Welcome to ThatScotDataSci
 banner-subheader: Find out more <a href="/about">about me ></a>
 ---
 
-Personal website of data scientist Alan Clark
+Hello, and welcome to my website. I'm a chemical engineer by background, but a developer by vocation and heart. I currently work for BP as an Analytics Platform Developer, and spend a lot of my time further improving my data science skillset.
+
+Feel free to find our more [about me](/about), visit my [blog](/blog), and take a look at my [wiki](/wiki).
+
+You can get in touch via [email](mailto:{{ site.email }}) or any social media channel - links can be found below.
