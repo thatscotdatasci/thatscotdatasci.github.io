@@ -4,7 +4,7 @@
 
 ## Welcome to the code behind the TSDS website!
 
-Hello, you have found the code for my website [thatscotdatasci.com](http://thatscotdatasci.com).
+Hello, you have found the code for my website [thatscotdatasci.com](https://thatscotdatasci.com).
 
 ## Such thing as a free lunch?
 
@@ -26,7 +26,7 @@ One feature of Jekyll I would highlight especially is [collections](https://jeky
 
 > _Collections allow you to define a new type of document that behave like Pages or Posts do normally, but also have their own unique properties and namespace._
 
-An example of the use of collections can be found in my [wiki](thatscottishdatascientist.com/wiki/).
+An example of the use of collections can be found in my [wiki](https://thatscotdatasci.com/wiki).
 
 ## Recognition
 
@@ -35,3 +35,7 @@ When I first created this page I took advantage of the fact that you can [add a 
 However, once I'd gotten to grips with the basics of Jekyll, I was keen to go my own way. Whilst it is possible to [customise CSS in your Jekyll theme](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/), I planned to significantly overhaul the styling, and so directly imported the stylesheets from the Cayman theme into my project and stopped inheriting the CC0 theme altogether.
 
 I'm extremely grateful to the developers of Cayman for giving me my starting point.
+
+## Citations
+
+The trophy icon used (example can be seen on my [about page](https://thatscotdatasci.com/about)) was created by Samy Menai from the Noun Project.
