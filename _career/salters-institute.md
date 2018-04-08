@@ -1,7 +1,7 @@
 ---
 title: Salters' Institute
 website: https://www.saltersinstitute.co.uk/awards/graduate-awards
-sub-title: Chemical Engineer Award
+sub-title: Chemical Engineering Graduate Award
 date-from: 2015-12-01
 image: /assets/logos/career/salters_institute_100.jpg
 technologies: [ trophy ]
