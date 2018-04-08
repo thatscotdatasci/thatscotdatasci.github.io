@@ -58,7 +58,6 @@ permalink: /wiki
     <ul>
     {% for wiki in tag_wikis %}
       <li>
-      <p>
       <a href="{{ wiki.url }}">
       {{ wiki.title }}
       </a>
@@ -74,7 +73,6 @@ permalink: /wiki
         {% endif %}
       {% endfor %}
       )
-    </p>
       </li>
     {% endfor %}
     </ul>
