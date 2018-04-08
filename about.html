@@ -12,7 +12,7 @@ permalink: /about
   </div>
 </div>
 
-{% assign careeritems = site.career | sort: 'date-from' %}
+{% assign careeritems = site.career | sort: 'date-from' | reverse %}
 {% for item in careeritems %}
-  {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to content=item.content image=item.image %}
+  {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image %}
 {% endfor %}

@@ -4,9 +4,17 @@
   </div>
   <div class="col-10">
     <div class="section">
-      <div class="section-title">{{ include.title }}</div>
-      <div class="section-subtitle">{{ include.sub-title }}</div>
-      <div class="section-subtitle">{{ include.date-from | date: "%d/%m/%Y" }} - {{ include.date-to | date: "%d/%m/%Y" }}</div>
+      <div class="section-title"><a href="{{ include.website }}" target="_blank" rel="noopener">{{ include.title }}</a></div>
+      {% if include.sub-title %}
+        <div class="section-subtitle">{{ include.sub-title }}</div>
+      {% endif %}
+      {% if include.date-from %}
+        {% if include.date-to %}
+          <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }} - {{ include.date-to | date: "%b %Y" }}</div>
+        {% else %}
+          <div class="section-subtitle">{{ include.date-from | date: "%b %Y" }}</div>
+        {% endif %}
+      {% endif %}
       {{ include.content }}
     </div>
   </div>

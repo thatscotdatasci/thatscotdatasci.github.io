@@ -3,14 +3,7 @@
 @import 'variables';
 @import 'mixins/mixins';
 @import 'includes/normalize';
-@import 'includes/grid';
-@import 'includes/header';
-@import 'includes/footer';
-@import 'includes/section';
-@import 'includes/social-media-links';
-@import 'includes/buttons';
 @import 'includes/rouge-github';
-@import 'layouts/default';
 
 * {
   box-sizing: border-box;
@@ -207,3 +200,11 @@ a {
     border: 0;
   }
 }
+
+@import 'layouts/default';
+@import 'includes/grid';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/section';
+@import 'includes/social-media-links';
+@import 'includes/buttons';

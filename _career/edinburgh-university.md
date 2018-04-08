@@ -1,9 +1,10 @@
 ---
 title: Edinburgh University
+website: https://www.ed.ac.uk
 sub-title: MEng Chemical Engineering
-date-from: 01/09/2010
-date-to: 01/06/2015
-image: /assets/logos/tsds_100.jpg
+date-from: 2010-09-01
+date-to: 2015-06-01
+image: /assets/logos/career/edinburgh_university_100.jpg
 ---
 
-Studied for a masters in Chemical Engineering
+Gained a First Class Master's degree in Chemical Engineering. Recipient of the class medal in every year, and awared prizes by BP and Exxon Mobil.
