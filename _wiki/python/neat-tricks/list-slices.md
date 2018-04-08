@@ -1,5 +1,7 @@
 ---
 title: List Slices
+date: 2018-04-01
+display-date: Y
 categories: [ Python ]
 tags: [ Neat Tricks ]
 ---

@@ -1,5 +1,7 @@
 ---
 title: Cheat Sheets
+date: 2018-04-02
+display-date: Y
 categories: [ Jekyll ]
 tags: [ General ]
 ---

@@ -1,5 +1,7 @@
 ---
 title: Lambda Functions on Data Frames
+date: 2018-04-01
+display-date: Y
 categories: [ Python ]
 tags: [ Pandas, Neat Tricks ]
 ---

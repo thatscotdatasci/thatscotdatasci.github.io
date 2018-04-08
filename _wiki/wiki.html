@@ -6,6 +6,10 @@ permalink: /wiki
 
 <p>This wiki contains a multitude of useful technologies, libraries, features and tricks I have come across.</p>
 
+<p>Many of these articles are not particularly advanced (a lot have resulted from Googling the problems I had at the time), but I find them useful to reference every now and then. Feel free to shamelessy copy any code snippets from any of the articles.</p>
+
+<p>Articles have been arranged into categories by technology, and then sub-divided into related tags.</p>
+
 {% assign rawcategories = "" %}
 {% for wiki in site.wiki %}
   {% assign tcategories = wiki.categories | join:'|' | append:'|' %}
@@ -54,14 +58,23 @@ permalink: /wiki
     <ul>
     {% for wiki in tag_wikis %}
       <li>
-      <h3>
+      <p>
       <a href="{{ wiki.url }}">
       {{ wiki.title }}
       </a>
+      {% if wiki.display-date %}
+        ({{ wiki.date | date: '%d/%m/%Y' }})
+      {% endif %}
+      ( Tags:
       {% for tag in wiki.tags %}
-        <a class="tag" href="/wiki/tag/#{{ tag | slugify }}">({{ tag }})</a>
+        {% if forloop.last %}
+          <a class="tag" href="/wiki/tag/#{{ tag | slugify }}">{{ tag }} </a>
+        {% else %}
+          <a class="tag" href="/wiki/tag/#{{ tag | slugify }}">{{ tag }}, </a>
+        {% endif %}
       {% endfor %}
-      </h3>
+      )
+    </p>
       </li>
     {% endfor %}
     </ul>

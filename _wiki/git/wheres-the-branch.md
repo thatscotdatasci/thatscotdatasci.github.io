@@ -1,5 +1,7 @@
 ---
 title: Where's the Branch?
+date: 2018-03-25
+display-date: Y
 categories: [ Git ]
 tags: [ General ]
 ---

@@ -1,5 +1,7 @@
 ---
 title: PyInstaller
+date: 2018-03-25
+display-date: Y
 categories: [ Python ]
 tags: [ Other Libraries ]
 ---

@@ -1,5 +1,7 @@
 ---
 title: Fill Empty Values from another Column
+date: 2018-03-25
+display-date: Y
 categories: [ Python ]
 tags: [ Pandas, Neat Tricks ]
 ---
