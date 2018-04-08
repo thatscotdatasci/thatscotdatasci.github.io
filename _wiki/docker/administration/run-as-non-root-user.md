@@ -6,7 +6,7 @@ categories: [ Docker ]
 tags: [ Administration ]
 ---
 
-As per the [Docker post-install documentation][docker-post-install-url]:
+As per the Docker [post-install documentation][docker-post-install-url]:
 
 > _The docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket is **owned by the user root and other users can only access it using sudo**. The docker daemon always runs as the root user._
 
@@ -14,7 +14,7 @@ Having to continuously prepend your docker commands with **sudo** can be tedius,
 
 ## Become a Docker groupie
 
-Again from the [Docker post-install documentation][docker-post-install-url]:
+Again from the Docker [post-install documentation][docker-post-install-url]:
 
 > _If you don’t want to use sudo when you use the docker command, **create a Unix group called docker and add users to it**. When the docker daemon starts, it makes the ownership of the Unix socket read/writable by the docker group._
 
@@ -41,5 +41,13 @@ Thus, run the following commands:
     ```bash
     docker run hello-world
     ```
+
+## Stay safe
+
+Returning to the Docker [post-install documentation][docker-post-install-url] one last time:
+
+> **Warning**: The docker group grants privileges equivalent to the root user.
+
+Docker provides details on how this impacts security in your system [here](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface).
 
 [docker-post-install-url]: https://docs.docker.com/install/linux/linux-postinstall/
