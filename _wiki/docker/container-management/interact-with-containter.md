@@ -3,7 +3,7 @@ title: Interact with a Running Container
 date: 2018-04-08
 display-date: Y
 categories: [ Docker ]
-tags: [ Commands ]
+tags: [ Container Management ]
 ---
 
 It's a common scenario: one of your Docker containers is running, and you need to access its filesystem. Perhaps something has gone wrong and you want to troubleshoot by taking a look at logs, or perhaps there's a config file that you want to query.
