@@ -24,7 +24,7 @@ An example of this is as follows:
 
 It is possible to indicate what language your code block is written in, which will result in appropriate syntax highlighting.
 
-For example, in [this](https://thatscotdatasci.com/wiki/python/lambda-functions-on-data-frames) wiki article, I have the following code snippet:
+For example, in [this](https://thatscotdatasci.com/wiki/python/pandas/neat-tricks/lambda-functions-on-data-frames) wiki article, I have the following code snippet:
 
 ```python
 def determine_source_type(url):
