@@ -18,13 +18,13 @@ Taking advantage of this functionality in combination with lamda functions provi
 
 **Solution:** In the following statement I create a new column in my data frame called **SourceType**, determining the appropriate value for each row by applying the function **determine_source_type** to each **URL** value.
 
-{% highlight python %}
+```python
 df['SourceType'] = df.apply(lambda df_row: determine_source_type(str(df_row['URL'])), axis=1)
-{% endhighlight %}
+```
 
 Where the **determine_source_type** function is defined as follows:
 
-{% highlight python %}
+```python
 def determine_source_type(url):
     url = url.upper()
 
@@ -39,4 +39,4 @@ def determine_source_type(url):
     if any(indicator in url for indicator in external_url_indicators):
         return 'EXTERNAL_URL'
     return 'UNKNOWN'
-{% endhighlight %}
+```

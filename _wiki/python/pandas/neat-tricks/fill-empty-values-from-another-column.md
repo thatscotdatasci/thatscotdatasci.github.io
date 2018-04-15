@@ -10,8 +10,8 @@ tags: [ Pandas, Neat Tricks ]
 
 If you want to create a column which uses a value from one column when it is not blank, and a value from another when it is, the following trick can be used:
 
-{% highlight python %}
+```python
 df['Col3'] = df['Col1'] # Where Col1 is known to contain some blanks
 
 df['Col3'].fillna(df['Col2'])
-{% endhighlight %}
+```
