@@ -3,7 +3,7 @@ title: Zeroes not Nones
 date: 2018-03-25
 display-date: Y
 categories: [ Power BI ]
-tags: [ Neat Tricks ]
+tags: [ Visuals ]
 ---
 
 If you have ever wanted to display a count of the number of rows in a table, or the number of values in a column, on a Card, Guage or other Power BI visualisation you'll have likely observed the fact that **(None)** rather than 0 is returned if no records are found.
