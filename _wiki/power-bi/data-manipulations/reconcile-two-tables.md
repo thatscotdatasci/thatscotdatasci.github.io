@@ -6,7 +6,7 @@ categories: [ Power BI ]
 tags: [ Data Manipulation ]
 ---
 
-Imagine that you have the following two tables. Table 1 contains a source of data, and Table 2 is effectively a catalogue of data from multiple different sources. Each of these tables are stored in a seperate database, hence there is no pre-existing relationship between them.
+Imagine that you have the following two tables. Table 1 contains a source of data, and Table 2 is effectively a catalogue of data from multiple different sources. Each of these tables are stored in a separate database, hence there is no pre-existing relationship between them.
 
 _Table 1:_
 
@@ -14,7 +14,7 @@ _Table 1:_
 |-------|--------|---------|
 | 1 | Toyota | Yaris |
 | 2 | Honda | Jazz |
-| 3 | Mini | fuji |
+| 3 | Mini | Cooper |
 | 4 | Suzuki | Swift |
 | 5 | Hyundai | i20 |
 
@@ -26,7 +26,7 @@ _Table 2:_
 | 3 | Sarah | 01/03/2017 |
 | 5 | Jane | 04/04/2018 |
 
-The process of cataloging the data in Table 1 is underway, and you want to produce a view in Power BI which indicates whether each item in Table 1 has been catalogued in Table 2, as follows:
+The process of cataloguing the data in Table 1 is underway, and you want to produce a view in Power BI which indicates whether each item in Table 1 has been catalogued in Table 2, as follows:
 
 _Table 3:_
 
@@ -34,7 +34,7 @@ _Table 3:_
 |-------|--------|---------|
 | 1 | Toyota | Yaris | True |
 | 2 | Honda | Jazz | False |
-| 3 | Mini | fuji | True |
+| 3 | Mini | Cooper | True |
 | 4 | Suzuki | Swift | False |
 | 5 | Hyundai | i20 | True |
 
@@ -56,7 +56,7 @@ Catalogued = NOT(ISBLANK(RELATED(Table2[ID])))
 
 ## Unrelated Tables
 
-The following DAX experession will produce the desired column regardless of whether there is a relationship between the tables:
+The following DAX expression will produce the desired column regardless of whether there is a relationship between the tables:
 
 ```bash
 Catalogued = CALCULATE(COUNTROWS(Table2), FILTER(Table2, Table2[ID]=Table1[ID])) > 0
