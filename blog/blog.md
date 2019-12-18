@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Blog Home
+layout: default
 permalink: /blog
+title-settings: hide
 ---
 
 As you'll be able to see from the below, I'm not a big blogger - more to come in the future!
