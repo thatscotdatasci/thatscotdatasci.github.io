@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+alternate-title: Well hello there...
 permalink: /
 banner-header: Welcome to ThatScotDataSci
 banner-subheader: Find out more <a href="/about">about me ></a>
