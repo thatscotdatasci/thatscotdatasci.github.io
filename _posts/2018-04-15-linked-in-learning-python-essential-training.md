@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LinkedIn Learning - Essentials
+title: LinkedIn Learning - Python Essentials
 date: 2018-04-15
 display-date: Y
 categories: [ Learning ]
