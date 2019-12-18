@@ -4,7 +4,7 @@ title: Blog Home
 permalink: /blog
 ---
 
-Blog articles are coming!
+As you'll be able to see from the below; I'm not a big blogger - more to come in the future!
 
 <ul>
   {% for post in site.posts %}
