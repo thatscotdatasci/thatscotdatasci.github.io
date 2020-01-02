@@ -1,0 +1,21 @@
+name: Monthly Build
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Create an empty commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        echo "Committing with comment: Monthly build - ${{ github.event.comment.created_at }}"
+        git commit -m "Monthly build - ${{ github.event.comment.created_at }}" --allow-empty
+    - name: Push empty commit
+      run: |
+        echo "Pushing to: github.com/${{ github.repository }}.git"
+        git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" origin master
