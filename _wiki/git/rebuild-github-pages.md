@@ -39,7 +39,8 @@ This gets around the issue of being unable to manually trigger the website build
 However, whilst the action to build and deploy GitHub Pages isn't exposed, you can add your own actions to the website repository - and these can be [scheduled](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule).
 
 I created the following scheduled action to push an empty commit on the first of every month (file in repo [here](https://github.com/thatscotdatasci/thatscotdatasci.github.io/blob/fe6daf13868be38206b384d9d8bf02a3be46f8b4/.github/workflows/monthly_build.yaml)).
-Not only does this mean that my footer will be updated at the start of January each year, but I'll also get an email if there are any issues with the build and deployment of my website.
+Note that a GitHub action for performing pushes does exist (see [github-push-action](https://github.com/ad-m/github-push-action)), however what I needed was very simple, and easily implemented manually.
+Not only does this action mean that my footer will be updated at the start of January each year, but I'll also get an email if there are any issues with the build and deployment of my website - flagging any problems which I might run into when I next make updates.
 
 {% highlight yaml %}
 name: Monthly Build
