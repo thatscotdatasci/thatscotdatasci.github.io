@@ -2,7 +2,7 @@ name: Monthly Build
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '0 0 1 * *'
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        echo "Committing with comment: Monthly build - ${{ github.event.comment.created_at }}"
+        echo "Committing with comment: Automated Monthly Build"
         git commit -m "Monthly build - ${{ github.event.comment.created_at }}" --allow-empty
     - name: Push empty commit
       run: |
