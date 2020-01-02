@@ -2,10 +2,11 @@ name: Monthly Build
 
 on:
   schedule:
-    - cron: '10 * * * *'
+    - cron: '15 * * * *'
 
 jobs:
   build:
+    name: Create and push empty commit
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -18,4 +19,4 @@ jobs:
     - name: Push empty commit
       run: |
         echo "Pushing to: github.com/${{ github.repository }}.git"
-        git push "https://${{ github.actor }}:${{ secrets.GITHUB_REPO_TOKEN }}@github.com/${{ github.repository }}.git" origin master
+        git push "https://${{ github.actor }}:${{ secrets.GITHUB_REPO_TOKEN }}@github.com/${{ github.repository }}.git" master
