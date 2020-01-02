@@ -20,6 +20,6 @@ title-settings: hide
 
   {% assign careeritems = site.career | sort: 'date-from' | reverse %}
   {% for item in careeritems %}
-    {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image technologies=item.technologies %}
+    {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image image_col=2 technologies=item.technologies %}
   {% endfor %}
 </div>

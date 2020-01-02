@@ -1,25 +1,15 @@
 ---
-title: About Me
+title: Portfolio
 layout: default
-permalink: /about
+permalink: /portfolio
 title-settings: hide
 ---
 
-<div class="about">
-  <div class="row">
-    <div class="col-4">
-      <img class="about-image" src="/assets/images/profile_250.jpg" alt="AlanClark">
-    </div>
-    <div class="col-8">
-      <p>I'm a Chemical Engineer by background, but a data nerd by vocation and heart. I currently work for Deloitte as a Data Engineer and Scientist, and spend a lot of my time further improving my Data Science skillset.</p>
-      <p>A copy of my CV is available on request; please feel free to get in touch via email or any social media channel.</p>
-      <p>A timeline detailing my career and education to date can be found below.</p>
-      {% include social-media-links.html %}
-    </div>
-  </div>
+<p>Please find a selection of example projects I've completed below.</p>
 
-  {% assign careeritems = site.career | sort: 'date-from' | reverse %}
-  {% for item in careeritems %}
-    {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image technologies=item.technologies %}
+<div class="about">
+  {% assign portfolioitems = site.portfolio | sort: 'date-from' %}
+  {% for item in portfolioitems %}
+    {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image image_col=4 technologies=item.technologies github-repo=item.github-repo %}
   {% endfor %}
 </div>

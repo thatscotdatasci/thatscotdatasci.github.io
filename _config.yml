@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thatscotdatasci.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Social Accounts Details
 twitter_username: thatscotdatasci
 twitter_url: https://twitter.com/thatscotdatasci
 
@@ -31,6 +32,23 @@ linkedin_url: https://www.linkedin.com/in/thatscotdatasci
 stack_overflow_url: https://stackoverflow.com/users/9502131/thatscotdatasci?tab=profile
 
 google_analytics: UA-116667042-1
+
+# Technology Websites:
+technology_urls:
+  ansible: https://www.ansible.com
+  aws: https://aws.amazon.com
+  docker: https://www.docker.com
+  java: https://www.java.com
+  jenkins: https://jenkins.io
+  linux: https://www.linux.org
+  oracle: https://www.oracle.com/uk/database
+  postgres: https://www.postgresql.org
+  serverless: https://serverless.com
+  sql_server: https://www.microsoft.com/en-gb/sql-server
+  streamlit: https://streamlit.io
+  terraform: https://www.terraform.io
+  windows: https://www.microsoft.com/en-gb/windows
+  xojo: https://www.xojo.com
 
 # Build settings
 markdown: kramdown
@@ -44,6 +62,8 @@ collections:
   wiki:
     output: true
   career:
+    output: false
+  portfolio:
     output: false
 
 defaults:
