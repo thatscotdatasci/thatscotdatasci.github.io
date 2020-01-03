@@ -8,8 +8,8 @@ title-settings: hide
 <p>Please find a selection of example projects I've completed below.</p>
 
 <div class="about">
-  {% assign portfolioitems = site.portfolio | sort: 'date-from' %}
+  {% assign portfolioitems = site.portfolio | sort: 'date-from' | reverse %}
   {% for item in portfolioitems %}
-    {% include section.html title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image image_col=4 technologies=item.technologies github-repo=item.github-repo %}
+    {% include section.html section-type="portfolio" title=item.title sub-title=item.sub-title date-from=item.date-from date-to=item.date-to website=item.website content=item.content image=item.image image_col=4 technologies=item.technologies github-repo=item.github-repo %}
   {% endfor %}
 </div>

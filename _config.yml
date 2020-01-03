@@ -35,20 +35,23 @@ google_analytics: UA-116667042-1
 
 # Technology Websites:
 technology_urls:
-  ansible: https://www.ansible.com
-  aws: https://aws.amazon.com
-  docker: https://www.docker.com
-  java: https://www.java.com
-  jenkins: https://jenkins.io
-  linux: https://www.linux.org
-  oracle: https://www.oracle.com/uk/database
-  postgres: https://www.postgresql.org
-  serverless: https://serverless.com
-  sql_server: https://www.microsoft.com/en-gb/sql-server
-  streamlit: https://streamlit.io
-  terraform: https://www.terraform.io
-  windows: https://www.microsoft.com/en-gb/windows
-  xojo: https://www.xojo.com
+  ansible: https://www.ansible.com/
+  aws: https://aws.amazon.com/
+  docker: https://www.docker.com/
+  github: https://github.com/
+  java: https://www.java.com/
+  jekyll: https://jekyllrb.com/
+  jenkins: https://jenkins.io/
+  linux: https://www.linux.org/
+  liquid: https://shopify.github.io/liquid/
+  oracle: https://www.oracle.com/uk/database/
+  postgres: https://www.postgresql.org/
+  serverless: https://serverless.com/
+  sql_server: https://www.microsoft.com/en-gb/sql-server/
+  streamlit: https://streamlit.io/
+  terraform: https://www.terraform.io/
+  windows: https://www.microsoft.com/en-gb/windows/
+  xojo: https://www.xojo.com/
 
 # Build settings
 markdown: kramdown

@@ -1,7 +1,8 @@
 ---
 title: Streamlit Example
 website: https://tsds-streamlit-example.herokuapp.com/
-image: /assets/logos/technologies/streamlit_100.jpg
+date-from: 2019-12-01
+image: /assets/images/portfolio/streamlit_example.png
 technologies: [ python, streamlit ]
 github-repo: https://github.com/thatscotdatasci/streamlit-example
 ---
