@@ -3,7 +3,7 @@ title: Streamlit Example App
 website: https://tsds-streamlit-example.herokuapp.com/
 date-from: 2019-12-01
 image: /assets/images/portfolio/streamlit_example.png
-technologies: [ python, streamlit, heroku, github ]
+technologies: [ python, streamlit, heroku ]
 github-repo: https://github.com/thatscotdatasci/streamlit-example
 ---
 

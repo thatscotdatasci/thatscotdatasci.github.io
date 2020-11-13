@@ -3,7 +3,7 @@ title: Streamlit Neural Network Intuition App
 website: https://tsds-streamlit-nn-intuition.herokuapp.com/
 date-from: 2020-01-01
 image: /assets/images/portfolio/streamlit_nn_intuition.png
-technologies: [ python, streamlit, heroku, github ]
+technologies: [ python, streamlit, heroku ]
 github-repo: https://github.com/thatscotdatasci/streamlit-neural-network-intuition
 ---
 
