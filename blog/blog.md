@@ -17,7 +17,7 @@ Below is based on https://stackoverflow.com/questions/19086284/jekyll-liquid-tem
   {% for post in site.posts %}
     {% assign currentyear = post.date | date: "%Y" %}
     {% if currentyear != year %}
-      {% unless forloop.first %}</div>{% endunless %}
+      {% unless forloop.first %}</ul>{% endunless %}
       <h2 id="y{{currentyear}}">{{ currentyear }}</h2>
       <ul>
       {% assign year = currentyear %}
