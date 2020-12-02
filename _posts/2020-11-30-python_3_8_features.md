@@ -232,3 +232,88 @@ pip_metadata["Home-page"]
 pip_metadata["Requires-Python"]
 len(metadata.files("pip"))
 ``` 
+
+## math functions
+
+All of the examples below come from Real Python.
+
+### math.prod
+
+Most easily explained with an example:
+
+```python
+import math
+
+math.prod((2, 8, 7, 7))  # Returns 784
+2 * 8 * 7 * 7  # Returns 784
+```
+
+### math.isqrt
+
+Return the integer part of the square root operation.
+
+```python
+import math
+math.isqrt(9)  # Returns 3
+math.sqrt(9)  # Returns 3.0
+math.isqrt(15)  # Returns 3
+math.sqrt(15)  # Returns 3.872983...
+```
+
+### math.dist
+
+Determines the Euclidean distance between two points.
+
+```python
+import math
+point_1 = (16, 25, 20)
+point_2 = (8, 15, 14)
+math.dist(point_1, point_2)
+```
+
+### math.hypot
+
+Returns the multidimensional Euclidean distance from the origin to a point.
+
+```python
+import math
+point_1 = (16, 25, 20)
+math.hypot(*point1)  # Returns 35.79106033...
+```
+
+## statistics Functions
+
+The following new functions have been added to the `statistics` function:
+
+- `statistics.fmean()` - calculates the mean of float numbers
+
+    According to [GeeksforGeeks](https://www.geeksforgeeks.org/fmean-function-in-python-statistics/):
+    
+    > The only difference in computing mean using mean() and fmean() is that while using fmean() data gets converted to floats whereas in case of mean(), data does not get converted to floats. Moreover fmean() function runs faster than the mean() function.
+    
+    And the method docstring:
+    
+    > Convert data to floats and compute the arithmetic mean. This runs faster than the mean() function and it always returns a float.
+
+    ```python
+    statistics.mean((1,2,3))  # Returns 2
+    statistics.fmean((1,2,3))  # Returns 2.0
+    statistics.mean((1,2,3,5))  # Returns 2.75
+    statistics.fmean((1,2,3,5))  # Returns 2.75
+    ```
+    
+- `statistics.geometric_mean()` - calculates the geometric mean of float numbers
+- `statistics.multimode()` - finds the most frequently occurring values in a sequence
+
+    From the method docstring:
+    
+    >  Return a list of the most frequently occurring values. Will return more than one result if there are multiple modes
+
+    ``` python
+    multimode('aabbbbbbbbcc')  # Returns b
+    multimode('aabbbbccddddeeffffgg')  # Returns ['b', 'd', 'f']
+    ```                                                                                                     
+
+- `statistics.quantiles()` - calculates the cut points for dividing data into n continuous intervals with equal probability
+
+Python 3.8 also introduces a new `statistics.NormalDist` class for working with Gaussian normal distributions.
