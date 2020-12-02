@@ -212,3 +212,23 @@ f'{user=} {member_since=}'
 # Will return: "user='eric_idle' member_since=datetime.date(1975, 7, 31)"
 ```
 
+## importlib.metadata
+
+The new `importlib.metadata` module provides support for reading metadata from third-party packages,
+improving on `pgk_resources` provided with `setuptools` (see [here](https://setuptools.readthedocs.io/en/latest/pkg_resources.html)).
+
+Examples from Real Python of its use:
+
+```python
+from importlib import metadata
+# Get the version of the pip library installed in the environment
+metadata.version("pip")
+
+# Get metadata about the installed pip library
+pip_metadata = metadata.metadata("pip")
+
+# Various properties can be accessed from this
+pip_metadata["Home-page"]
+pip_metadata["Requires-Python"]
+len(metadata.files("pip"))
+``` 
