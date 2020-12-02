@@ -42,3 +42,35 @@ libraries
 # The same could be achieved using the update method
 libraries.update([("graphlib", "Functionality for graph-like structures")])
 ```
+
+## Typing Annotation Factory
+
+[Source: Real Python](https://realpython.com/python39-new-features/#annotated-type-hints)
+
+Example of a typing annotation factory. Note that this uses the `typing.Annoted` class introduced in Python 3.9,
+is an interesting example of how to standardise typing:
+
+```python
+from typing import Annotated
+
+class AnnotationFactory:
+    def __init__(self, type_hint):
+        self.type_hint = type_hint
+
+    def __getitem__(self, key):
+        if isinstance(key, tuple):
+            return Annotated[(self.type_hint, ) + key]
+        else:
+            return Annotated[self.type_hint, key]
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.type_hint})"
+
+Float = AnnotationFactory(float)
+
+def speed(
+    distance: Float["feet"], time: Float["seconds"]
+) -> Float["miles per hour"]:
+    """Calculate speed as distance over time"""
+    ...
+```
