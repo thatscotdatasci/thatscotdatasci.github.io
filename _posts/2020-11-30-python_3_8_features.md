@@ -10,6 +10,8 @@ tags: [ Python ]
 Recap of some of the features introduced in Python 3.8, primarily from [Real Python](https://realpython.com/courses/cool-new-features-python-38/)
 and the [Python documentation](https://docs.python.org/3/whatsnew/3.8.html).
 
+The documentation on porting to Python 3.8 can be found [here](https://docs.python.org/3.8/whatsnew/3.8.html#porting-to-python-3-8).
+
 ## The Walrus Operator/Assignment Expression
 
 Introduction of the syntax `:=`, which assigns the outcome of an expression to a variable and also returns the outcome.
