@@ -3,7 +3,7 @@ title: Cool Features and Snippets
 date: 2020-12-01
 display-date: N
 categories: [ Python ]
-tags: [ General ]
+tags: [ General, Neat Tricks ]
 ---
 
 Repo of various cool features and code snippets I've come across, which are too small to have their own page.
