@@ -22,6 +22,12 @@
             {% if page.title and page.title-settings != 'hide' %}
               {% include header-block.html %}
             {% endif %}
+            {% if page.toc == 'Y' %}
+              <div class="markdown-toc">
+                <b>Contents</b>
+                {% include toc.html html=content sanitize=true %}
+              </div>
+            {% endif %}
             {{ content }}
           </div>
         </div>
