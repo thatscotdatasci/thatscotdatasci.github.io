@@ -3,7 +3,7 @@ layout: default
 title: Python 3.8 Features
 date: 2020-11-30
 display-date: Y
-categories: [ Learning ]
+categories: [ Releases ]
 tags: [ Python ]
 ---
 
