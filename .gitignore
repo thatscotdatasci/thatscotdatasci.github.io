@@ -5,3 +5,4 @@ _drafts
 .idea
 .sass-cache
 .jekyll-metadata
+.DS_store
