@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+image: assets/images/media_745.jpg
 alternate-title: Well hello there...
 permalink: /
 banner-header: Welcome to ThatScotDataSci

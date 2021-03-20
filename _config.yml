@@ -15,10 +15,17 @@
 # in the templates via {{ site.myvariable }}.
 title: ThatScotDataSci
 email: alan@thatscotdatasci.com
+author: Alan Clark
 description: >- # this means to ignore newlines until "baseurl:"
   Website of professional data nerd Alan Clark
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thatscotdatasci.com" # the base hostname & protocol for your site, e.g. http://example.com
+locale: en_GB
+logo: assets/logos/tsds_100.jpg
+image:
+  path: assets/images/media_745.jpg
+  height: 745
+  width: 745
 
 # Social Accounts Details
 twitter_username: thatscotdatasci
@@ -60,6 +67,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-seo-tag
 
 # User defined collections
 collections:
