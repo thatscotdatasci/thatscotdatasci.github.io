@@ -86,6 +86,10 @@ defaults:
       layout: default
       permalink: /:collection/:path
 
+include:
+  - assets/images/media_754.jpg
+  - assets/logos/tsds_100.jpg
+
 # Exclude from processing.
 # The following items will not be processed
 exclude:
