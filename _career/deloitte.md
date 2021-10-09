@@ -3,7 +3,7 @@ title: Deloitte
 website: https://www2.deloitte.com/uk/en.html
 sub-title: Data Engineer/Scientist
 date-from: 2018-12-10
-date-to: Present
+date-to: 2021-08-01
 image: /assets/logos/career/deloitte_100.jpg
 technologies: [ aws, python, sql_server, postgres, terraform, serverless ]
 ---
