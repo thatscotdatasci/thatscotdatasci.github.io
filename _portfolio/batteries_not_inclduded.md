@@ -1,5 +1,5 @@
 ---
-title: Batteries Not Included
+title: Batteries Not Included - Modelling Grid-Scale Battery Storage Requirements
 website: downloads/Batteries_Not_Included.pdf
 date-from: 2021-12-31
 image: /assets/images/portfolio/batteries_not_included.png
