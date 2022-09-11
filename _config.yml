@@ -55,6 +55,7 @@ technology_urls:
   oracle: https://www.oracle.com/uk/database/
   postgres: https://www.postgresql.org/
   pytorch: https://pytorch.org/
+  python: https://www.python.org/
   serverless: https://serverless.com/
   sql_server: https://www.microsoft.com/en-gb/sql-server/
   streamlit: https://streamlit.io/
