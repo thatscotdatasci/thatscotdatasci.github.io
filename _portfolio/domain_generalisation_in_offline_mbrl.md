@@ -1,6 +1,6 @@
 ---
 title: Domain Generalisation for Robust Model-Based Offline Reinforcement Learning
-website: downloads/Weight_Uncertainty_in_Neural_Networks.pdf
+website: downloads/Domain_Generalisation_for_Robust_Model_Based_Offline_RL.pdf
 date-from: 2022-08-01
 image: /assets/images/portfolio/domain_generalisation_for_robust_model_based_offline_rl.png
 technologies: [ python, tensorflow, cambridge_mlmi ]
