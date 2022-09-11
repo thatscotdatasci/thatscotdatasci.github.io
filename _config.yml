@@ -44,6 +44,7 @@ google_analytics: UA-116667042-1
 technology_urls:
   ansible: https://www.ansible.com/
   aws: https://aws.amazon.com/
+  cambridge_mlmi: https://www.mlmi.eng.cam.ac.uk/
   docker: https://www.docker.com/
   github: https://github.com/
   heroku: https://www.heroku.com/
