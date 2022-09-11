@@ -2,7 +2,7 @@
 title: Batteries Not Included
 website: downloads/Batteries_Not_Included.pdf
 date-from: 2021-12-31
-image: /assets/images/portfolio/cambridge_spark_smartbell.jpg
+image: /assets/images/portfolio/batteries_not_included.png
 technologies: [ python ]
 ---
 
