@@ -4,6 +4,7 @@ website: downloads/Batteries_Not_Included.pdf
 date-from: 2021-12-31
 image: /assets/images/portfolio/batteries_not_included.png
 technologies: [ python ]
+github-repo: https://github.com/Cam-MLPW-MLMI-21-22
 ---
 
 This project was conducted for the [Machine Learning in the Physical World](https://mlatcl.github.io/mlphysical/) module of the [MPhil Machine Learning and Machine Intelligence](https://www.mlmi.eng.cam.ac.uk/) at the University of Cambridge.
