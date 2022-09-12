@@ -1,5 +1,5 @@
 ---
-title: Home Energy Management Using BEVs
+title: Home Energy Management using BEVs
 website: downloads/Home_Energy_Management_with_BEVs.pdf
 date-from: 2022-03-01
 image: /assets/images/portfolio/home_energy_management_with_BEVs.png
