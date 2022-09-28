@@ -7,4 +7,4 @@ date-to: Present
 image: /assets/logos/career/cambridge_university_100.jpg
 ---
 
-Currently studying for an MPhil in Machine Learning and Machine Intelligence. Member of Jesus College.
+Awarded an MPhil in Machine Learning and Machine Intelligence. Member of Jesus College, with Distinction.
