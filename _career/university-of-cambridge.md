@@ -7,4 +7,4 @@ date-to: Present
 image: /assets/logos/career/cambridge_university_100.jpg
 ---
 
-Awarded an MPhil in Machine Learning and Machine Intelligence. Member of Jesus College, with Distinction.
+Awarded an MPhil in Machine Learning and Machine Intelligence, with Distinction. Member of Jesus College.
