@@ -12,7 +12,7 @@ Hello, and welcome to my website. I'm a Chemical Engineer by background, but a d
 
 After 3 years working for each of BP and Deloitte as a developer, data engineer and data scientist, I returned to the world of academia to pursue an [MPhil in Machine Learning and Machine Intelligence](https://www.mlmi.eng.cam.ac.uk/) at the University of Cambridge in 2021/22, for which I was awarded a Distinction.
 
-I'm currently looking for a new role which combines my skills and passions. Ideally, this would be as a Data Scientist, Machine Learning Engineer or Modelling Specialist in sectors relating to energy, renewables, infrastructure, or any other engineering field.
+I'm a Senior Machine Learning Engineer at PhysicsX - a deep-tech company of scientists and engineers, developing machine learning applications to massively accelerate physics simulations and enable a new frontier of optimization opportunities in physical design and engineering.
 
 Find out more [about me](/about), explore my [portfolio](/portfolio), and take a look at my [wiki](/wiki).
 
