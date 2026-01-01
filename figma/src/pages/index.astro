@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Home from '../components/Home.astro';
+---
+
+<BaseLayout title="Home | Alan Clark">
+  <div class="min-h-screen bg-background text-neutral-900">
+    <Header />
+    <main class="min-h-screen">
+      <Home />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
+

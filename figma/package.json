@@ -1,0 +1,18 @@
+{
+  "name": "Alan Clark",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.16.6",
+    "lucide-astro": "^0.556.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  }
+}

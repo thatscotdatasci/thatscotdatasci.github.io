@@ -1,0 +1,31 @@
+---
+import { Linkedin, Github } from 'lucide-astro';
+
+interface Props {
+  iconSize?: string;
+}
+
+const { iconSize = 'w-5 h-5' } = Astro.props;
+---
+
+<div class="flex gap-6">
+  <a 
+    href="https://www.linkedin.com/in/alanclarkdev/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-neutral-600 hover:text-orange-500 transition-colors"
+    aria-label="LinkedIn"
+  >
+    <Linkedin class={iconSize} />
+  </a>
+  <a 
+    href="https://github.com/thatscotdatasci" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-neutral-600 hover:text-orange-500 transition-colors"
+    aria-label="GitHub"
+  >
+    <Github class={iconSize} />
+  </a>
+</div>
+
