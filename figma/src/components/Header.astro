@@ -5,7 +5,7 @@ import Logo from './Logo.astro';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 bg-background">
+<header class="sticky top-0 z-50 border-b border-neutral-200 bg-background">
   <div class="px-12 lg:px-20 py-6 flex justify-between items-center">
     <div class="flex items-center gap-8">
       <Logo className="w-8 h-8" />
