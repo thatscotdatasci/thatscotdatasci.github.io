@@ -1,0 +1,52 @@
+---
+import SocialLinks from './SocialLinks.astro';
+import profilePhoto from '../assets/profile.png';
+import mobilePhoto from '../assets/headshot.png';
+---
+
+<div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-0">
+  <!-- Left Side - Content -->
+  <div class="flex items-center justify-start p-12 lg:py-20 lg:pl-20 lg:pr-16 pt-20 lg:pt-20">
+    <div class="w-full">
+      <!-- Mobile Photo - Only visible on small screens -->
+      <div class="lg:hidden mb-12">
+        <img 
+          src={mobilePhoto.src}
+          alt="Alan Clark" 
+          class="w-64 h-64 object-cover rounded-2xl" 
+        />
+      </div>
+
+      <div class="mb-12">
+        <h1 class="text-6xl lg:text-7xl mb-6 leading-none text-orange-500">
+          Alan Clark
+        </h1>
+        <div class="text-xl text-neutral-600 leading-relaxed">
+          Senior Principal and Head of Machine Learning Engineering at PhysicsX
+        </div>
+      </div>
+
+      <div class="space-y-6 text-neutral-700 text-lg leading-relaxed border-l-2 border-orange-500 pl-6 mb-12">
+        <p>
+          Leading ML engineering teams to build cutting-edge solutions at the intersection of physics and artificial intelligence.
+        </p>
+        <p>
+          Building robust, scalable machine learning systems that solve real-world problems, bridging the gap between research and production.
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <SocialLinks iconSize="w-6 h-6" />
+    </div>
+  </div>
+
+  <!-- Right Side - Photo - Only visible on large screens -->
+  <div class="hidden lg:block relative h-screen">
+    <img 
+      src={profilePhoto.src} 
+      alt="Alan Clark" 
+      class="w-full h-full object-cover" 
+    />
+  </div>
+</div>
+
