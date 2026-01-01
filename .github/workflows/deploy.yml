@@ -2,7 +2,7 @@ name: Deploy Astro Site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,8 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
+    name: Build and Deploy Astro Site to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
