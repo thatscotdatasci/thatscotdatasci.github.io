@@ -14,24 +14,24 @@ Astro/TypeScript website for Alan Clark's personal website.
 ```
 figma/
 ├── src/
-│   ├── pages/          # Astro pages (file-based routing)
+│   ├── pages/                # Astro pages (file-based routing)
 │   │   ├── index.astro       # Home page
 │   │   └── experience.astro  # Experience page
-│   ├── components/    # Astro components
+│   ├── components/           # Astro components
 │   │   ├── Home.astro        # Home content
 │   │   ├── Experience.astro  # Experience timeline
 │   │   ├── Header.astro      # Navigation
-│   │   └── Footer.astro     # Footer
-│   ├── layouts/       # Page layouts
-│   │   └── BaseLayout.astro # Base HTML layout
-│   ├── styles/        # Global styles
-│   │   └── global.css # Tailwind + custom CSS
-│   ├── assets/        # Image assets
-│   ├── data/          # Data files (career, portfolio, etc.)
-│   └── types/         # TypeScript type definitions
-├── astro.config.mjs   # Astro configuration
-├── tailwind.config.mjs # Tailwind configuration
-└── package.json       # Dependencies
+│   │   └── Footer.astro      # Footer
+│   ├── layouts/              # Page layouts
+│   │   └── BaseLayout.astro  # Base HTML layout
+│   ├── styles/               # Global styles
+│   │   └── global.css        # Tailwind + custom CSS
+│   ├── assets/               # Image assets
+│   ├── data/                 # Data files (career, portfolio, etc.)
+│   └── types/                # TypeScript type definitions
+├── astro.config.mjs          # Astro configuration
+├── tailwind.config.mjs       # Tailwind configuration
+└── package.json              # Dependencies
 ```
 
 ## Getting Started
