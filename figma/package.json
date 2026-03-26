@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "astro": "^5.16.6",
+    "astro": "^5.18.1",
     "lucide-astro": "^0.556.0"
   },
   "devDependencies": {
